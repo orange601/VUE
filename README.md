@@ -7,7 +7,7 @@ Vue project
   - 참고 : https://hjh0827.tistory.com/51
 
 2. rm -rf vue-todo
-  - rm의 -rf 기증을 이용해서 프로젝트를 삭제하는 방법이 많이 나오는데 git 명령어라는 것을 
+  - rm의 -rf 기증을 이용해서 프로젝트를 삭제하는 방법이 많이 나오는데 git 명령어라는 것을 알고있자.
 
 ## 시작 ##
 1. vue.cmd create vue-todo 명령어 실행
