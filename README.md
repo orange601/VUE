@@ -32,3 +32,24 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 3. 참고
   - https://github.com/joshua1988/vue-til-server#nvm-%EC%84%A4%EC%B9%98-%EB%B0%8F-%EB%B2%84%EC%A0%84-%EB%B3%80%EA%B2%BD-%EB%B0%A9%EB%B2%95
   - https://www.inflearn.com/questions/281892 (윈도우)
+
+
+## 웹팩 개발 서버 ##
+- ajax 방식의 api 연동은 cors 정책 때문에 반드시 서버가 필요하다.
+- 프론트엔드 개발환경에서 이러한 개발용 서버를 제공해 주는 것이 webpack-dev-server다.
+
+````js
+// webpack.config.js:
+module.exports = {
+  devServer: {
+    contentBase: path.join(__dirname, "dist"),
+    publicPath: "/",
+    host: "dev.domain.com",
+    overlay: true, // 에러시 브라우저에 표시 여
+    port: 8081,
+    stats: "errors-only",
+    historyApiFallback: true,
+    open : true // 브라우저 바로 열기
+  },
+}
+````
