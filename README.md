@@ -59,11 +59,25 @@ module.exports = {
 - prettier 기능을 이용하면 소스의 일관성을 유지할 수 있음
 
 ## 파일을 상대경로에서 절대경로로 찾기 설정 ##
-변경 전
+- 변경 전
 ````vue
 import chart from './components/chart'
 ````
-변경 후
+- 변경 후
 ````vue
 import chart from '@/components/chart'
+````
+- 참고: https://code.visualstudio.com/docs/languages/jsconfig
+
+````js
+// jsconfig.json
+{ 
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+        "@/*": ["src/*"] // @이를 사용하게되면 src 폴더를 의미
+    }
+  },
+  "exclude": ["node_modules", "dist"] // 라이브러리 경로 제외
+}
 ````
