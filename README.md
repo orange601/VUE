@@ -16,8 +16,10 @@ Vue project
 4. npm run serve 실행
 
 ## NVM을 이용한 버전관리 ##
-**Installing and Updating**
-- https://github.com/nvm-sh/nvm
+- NVM을 사용한다면 여러개의 Node 를 버전별로 쉽게 관리하고 사용할 수 있다.
+
+### Installing and Updating ###
+- https://github.com/nvm-sh/nvm 접속하면 아래 설치방법과 스크립트 변경방법에 대해 자세하게 설명 되어 있다.
 1. Installing
 ````curl
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
