@@ -85,3 +85,7 @@ import chart from '@/components/chart'
 ## vue.js 스타일 가이드 ##
 - 안티패턴을 피하는 좋은 참조
 - 참고: https://kr.vuejs.org/v2/style-guide/index.html
+
+## router ##
+1. 설치
+  - npm i vue-router
