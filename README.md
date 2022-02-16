@@ -81,3 +81,6 @@ import chart from '@/components/chart'
   "exclude": ["node_modules", "dist"] // 라이브러리 경로 제외
 }
 ````
+
+## vue.js 스타일 가이드 ##
+https://github.com/orange601/Vue-Intermediate/blob/main/README.md
