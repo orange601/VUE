@@ -56,3 +56,4 @@ module.exports = {
 
 ## ESLint ##
 - JavaScript 코드에서 발견 된 문제 패턴을 식별하기위한 정적 코드 분석 도구
+- prettier 기능을 이용하면 소스의 일관성을 유지할 수 있음
