@@ -83,4 +83,4 @@ import chart from '@/components/chart'
 ````
 
 ## vue.js 스타일 가이드 ##
-https://github.com/orange601/Vue-Intermediate/blob/main/README.md
+https://kr.vuejs.org/v2/style-guide/index.html
