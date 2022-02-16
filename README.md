@@ -45,7 +45,7 @@ module.exports = {
     contentBase: path.join(__dirname, "dist"),
     publicPath: "/",
     host: "dev.domain.com",
-    overlay: true, // 에러시 브라우저에 표시 여
+    overlay: true, // 에러시 브라우저에 표시 여부
     port: 8081,
     stats: "errors-only",
     historyApiFallback: true,
