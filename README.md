@@ -17,6 +17,7 @@ Vue project
 
 ## 버전 ##
 "vue": "^2.6.11"
+
 "vue-router": "^3.5.3" // vue-router 4 > vue3부터 사용가능
 
 ## NVM을 이용한 버전관리 ##
