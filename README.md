@@ -95,3 +95,10 @@ import chart from '@/components/chart'
   - "vue-router": "^3.5.3" // vue-router 4 -> vue3부터 사용가능
 
 ## vuex ##
+1. 설치
+  - npm i vuex
+
+2. npm에서 확인해보면 상단에 현재 버전이 있고, 이전버전 설치를 원하면 version메뉴를 눌러서 확인하면 된다.
+  ![이미지 6](https://user-images.githubusercontent.com/24876345/154449112-d1b51c46-e447-4118-83b6-16b7c946ac91.png)
+  
+3. 폴더명을 store 라고 한다.
