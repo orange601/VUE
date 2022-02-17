@@ -108,3 +108,9 @@ import chart from '@/components/chart'
   - getters: 연산된 state 값을 접근하는 속성 computed
   - mutaions: state 값을 변경하는 이벤트 로직, 메서드 methods
   - actions: 비동기 처리 로직을 선언하는 메서드 aysnc methods
+
+5. 구조
+  - 컴포넌트 -> 비동기로직 -> 동기로직 -> 상태
+--------------------------------------------
+  ![이미지 7](https://user-images.githubusercontent.com/24876345/154450846-74ea3a72-f789-43f3-bcbf-c234ec5c2ed1.png)
+
