@@ -102,3 +102,9 @@ import chart from '@/components/chart'
   ![이미지 6](https://user-images.githubusercontent.com/24876345/154449112-d1b51c46-e447-4118-83b6-16b7c946ac91.png)
   
 3. vuex를 store 라고 한다. 폴더명도 store라고 생성한다.
+
+4. 기술요소
+  - state: 여러컴포넌트에 공유되는 데이터 data
+  - getters: 연산된 state 값을 접근하는 속성 computed
+  - mutaions: state 값을 변경하는 이벤트 로직, 메서드 methods
+  - actions: 비동기 처리 로직을 선언하는 메서드 aysnc methods
