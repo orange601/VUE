@@ -18,8 +18,6 @@ Vue project
 ## 버전 ##
 "vue": "^2.6.11"
 
-"vue-router": "^3.5.3" // vue-router 4 > vue3부터 사용가능
-
 ## NVM을 이용한 버전관리 ##
 - NVM을 사용한다면 여러개의 Node 를 버전별로 쉽게 관리하고 사용할 수 있다.
 
@@ -94,3 +92,6 @@ import chart from '@/components/chart'
 ## router ##
 1. 설치
   - npm i vue-router
+  - "vue-router": "^3.5.3" // vue-router 4 -> vue3부터 사용가능
+
+## vuex ##
