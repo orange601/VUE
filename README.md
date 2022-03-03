@@ -124,4 +124,4 @@ import chart from '@/components/chart'
   - 컴포넌트 -> 비동기로직 -> 동기로직 -> 상태
 --------------------------------------------
   ![이미지 7](https://user-images.githubusercontent.com/24876345/154450846-74ea3a72-f789-43f3-bcbf-c234ec5c2ed1.png)
-
+  
