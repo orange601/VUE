@@ -125,3 +125,12 @@ import chart from '@/components/chart'
 --------------------------------------------
   ![이미지 7](https://user-images.githubusercontent.com/24876345/154450846-74ea3a72-f789-43f3-bcbf-c234ec5c2ed1.png)
   
+
+## env 설정 ##
+1. .env.development 파일생성
+  - ROOT 폴더에 .env.development 파일생성
+  - VUE_APP_API_URL = 'http://localhost:9090' 추가 ("VUE_APP_" 접두어 필수)
+2. package.json scripts 추가
+  - "dev": "vue-cli-service serve --mode development",
+4. 추가된 script로 실행
+  - npm run dev
