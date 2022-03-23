@@ -89,7 +89,7 @@ import chart from '@/components/chart'
 - 참고: https://kr.vuejs.org/v2/style-guide/index.html
 
 ## router ##
-1. 설치
+1. 설치 
   - npm i vue-router
   - "vue-router": "^3.5.3" // vue-router 4 -> vue3부터 사용가능
 
