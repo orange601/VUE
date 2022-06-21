@@ -91,7 +91,71 @@ import chart from '@/components/chart'
 ## router ##
 1. 설치 
   - npm i vue-router
-  - "vue-router": "^3.5.3" // vue-router 4 -> vue3부터 사용가능
+  - "vue-router": "^3.5.3" **(vue-router 4) -> vue3부터 사용가능**
+2. router 설정
+  - src\router 폴더생성
+  - index.js 파일 생성
+  ````js
+  import Vue from 'vue';
+  import Router from 'vue-router';
+
+  Vue.use(Router)
+
+  export const router = new Router({
+    routes:[
+      {
+        path: '/',
+        component: () => import('../views/NewsView'),
+      }
+    ]
+  })
+  ````
+  - main.js 파일 수정
+  ````js
+  import Vue from 'vue'
+  import App from './App.vue'
+  import { router } from './router/index.js'
+
+  Vue.config.productionTip = false
+
+  new Vue({
+    render: h => h(App),
+    router,
+  }).$mount('#app')
+  ````
+  - App.vue 파일 생성
+  ````js
+  <template>
+    <div id="app">
+      <router-view />
+    </div>
+  </template>
+
+  <script>
+
+  export default {
+    name: 'App',
+    components: {
+    }
+  }
+  </script>
+
+  <style>
+  </style>
+  ````
+  - views/NewsView.vue 파일 생성
+  ````js
+  <template>
+    <div>TEST</div>
+  </template>
+
+  <script>
+  export default {
+
+  }
+  </script>
+  ````
+  
 
 ## vuex ##
 0. vuex란?
