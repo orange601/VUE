@@ -198,4 +198,4 @@ import chart from '@/components/chart'
 2. package.json scripts 추가
     - "dev": "vue-cli-service serve --mode development",
 4. 추가된 script로 실행
-    - npm run dev
+    - npm run dev 
