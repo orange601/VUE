@@ -233,6 +233,24 @@ async function logName() {
 - async await만 붙이면 되기 때문에 코드가 짧아졌고 가독성도 좋다.
 - 위에서부터 아래로 읽으면서 코드를 실행할 수 있다.
 
+### 콜백지옥 ###
+````javascript
+loginUser() {
+  axios.get('https://jsonplaceholder.typicode.com/users/1')
+  .then(response => {
+    if(response.data.id === 1){
+      console.log('사용자가 인증되었습니다.');
+      axios.get('https://jsonplaceholder.typicode.com/todos')
+        .then(response => {
+          this.items = response.data'
+        })
+    }
+  })
+  .catch(error => console.log(error));
+}
+````
+- 가독성도 떨어지고 로직 변경도 힘들다.
+
 ## env 설정 ##
 1. .env.development 파일생성
     - ROOT 폴더에 .env.development 파일생성
