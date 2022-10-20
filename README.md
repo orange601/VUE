@@ -191,6 +191,33 @@ import chart from '@/components/chart'
   ![이미지 7](https://user-images.githubusercontent.com/24876345/154450846-74ea3a72-f789-43f3-bcbf-c234ec5c2ed1.png)
   
 
+## async & await ##
+- 기존의 비동기 처리 방식인 콜백 함수와 프로미스의 단점을 보완하고 개발자가 읽기 좋은 코드를 작성
+
+#### 잠깐! 비동기처리란? ####
+> 자바스크립트의 비동기 처리란 특정 코드의 연산이 끝날 때까지 코드의 실행을 멈추지 않고 다음 코드를 먼저 실행하는 자바스크립트의 특성을 의미한다.
+
+### 순서를 보장받지 않은 비동기 처리 코드 ###
+````javascript
+function logName() {
+  var user = fetchUser('domain.com/users/1');
+  if (user.id === 1) {
+    console.log(user.name);
+  }
+}
+````
+
+### 기존 콜백 방식인 비동기 통신 ###
+````javascript
+function logName() {
+  var user = fetchUser('domain.com/users/1', function(user) {
+    if (user.id === 1) {
+      console.log(user.name);
+    }
+  });
+}
+````
+
 ## env 설정 ##
 1. .env.development 파일생성
     - ROOT 폴더에 .env.development 파일생성
