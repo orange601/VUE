@@ -206,6 +206,8 @@ function logName() {
   }
 }
 ````
+- 위에서부터 아래로 한 줄 한 줄 차근히 읽으면서 사고하는 것이 편하다.
+- 하지만, 순서를 보장받지 않았기때문에 fetchUser 함수가 끝나지 않은 상태에서 다음코드가 실행된다.
 
 ### 기존 콜백 방식인 비동기 통신 ###
 ````javascript
@@ -217,6 +219,19 @@ function logName() {
   });
 }
 ````
+- 순서를 보장받았지만, 코드가 길고 가독성도 떨어진다.
+
+### async & await 적용 후 코드 ###
+````javascript
+async function logName() {
+  var user = await fetchUser('domain.com/users/1');
+  if (user.id === 1) {
+    console.log(user.name);
+  }
+}
+````
+- async await만 붙이면 되기 때문에 코드가 짧아졌고 가독성도 좋다.
+- 위에서부터 아래로 읽으면서 코드를 실행할 수 있다.
 
 ## env 설정 ##
 1. .env.development 파일생성
