@@ -250,7 +250,7 @@ loginUser() {
   .catch(error => console.log(error));
 },
 
-// async await 사용 전
+// async await 사용 후
 async loginUser1() {
   var response = await axios.get('https://jsonplaceholder.typicode.com/users/1');
   if(response.data.id === 1) {
