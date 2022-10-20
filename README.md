@@ -259,7 +259,6 @@ async loginUser1() {
   } 
 }
 ````
-- 가독성도 떨어지고 로직 변경도 힘들다.
 
 ## env 설정 ##
 1. .env.development 파일생성
