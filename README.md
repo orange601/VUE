@@ -6,7 +6,7 @@
 
 ## 명령어 ##
 1. vue --version 
-  - 4.5.xx 버전에서 안됨
+  - 4.5.xx 버전 이상부터 안됨
   - -> vue.cmd --version 
   - 참고 : https://hjh0827.tistory.com/51
 
