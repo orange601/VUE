@@ -189,7 +189,34 @@ import chart from '@/components/chart'
   - 컴포넌트 -> 비동기로직 -> 동기로직 -> 상태
 --------------------------------------------
   ![이미지 7](https://user-images.githubusercontent.com/24876345/154450846-74ea3a72-f789-43f3-bcbf-c234ec5c2ed1.png)
-  
+
+
+## axios ##
+ - axios 모듈에서 Header에 토근값을 주입할때 아래와 같이 사용하게 된다.
+ ````js
+   const instance = axios.create({
+    // baseUrl: process.env.VUE_APP_BASE_API,
+    withCredentials: true,
+    headers: { 
+      Pragma: 'no-cache',
+      "TOKEN": store.state.token
+    }
+  });
+ ````
+ - 이렇게 되면 로그인 후 Token값을 다시 받아와야 하지만 store에 있는 값들은 변하지 않는다.
+ - 이때 interceptors를 이용하여 token 값을 주입하면 된다.
+
+````js
+  intance.interceptors.request.use(function (config) {
+    // Do something before request is sent
+    config.headers['TOKEN'] = store.state.token;
+    return config;
+  }, function (error) {
+    // Do something with request error
+    return Promise.reject(error);
+  });
+````
+
 
 ## async & await ##
 - 기존의 비동기 처리 방식인 콜백 함수와 프로미스의 단점을 보완하고 개발자가 읽기 좋은 코드를 작성
