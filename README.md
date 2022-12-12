@@ -155,7 +155,21 @@ import chart from '@/components/chart'
   }
   </script>
   ````
-  
+
+
+### Router Navigation Guards ###
+1. 네비게이션 가드(navigation guard)란?
+
+- 뷰 라우터로 특정 URL에 접근할 때 해당 URL의 접근을 막는 방법
+- 예) 사용자의 인증 정보가 없으면 특정 페이지에 접근하지 못하게 할 때 사용하는 기술
+- https://router.vuejs.org/guide/advanced/navigation-guards.html
+
+2. 네비게이션 종류
+- 애플리케이션 전역에서 동작하는 전역 가드
+- 특정 URL에서만 동작하는 라우터 가드
+- 라우터 컴포넌트 안에 정의하는 컴포넌트 가드
+
+
 
 ## vuex ##
 0. vuex란?
