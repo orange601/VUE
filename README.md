@@ -169,6 +169,22 @@ import chart from '@/components/chart'
 - 특정 URL에서만 동작하는 라우터 가드
 - 라우터 컴포넌트 안에 정의하는 컴포넌트 가드
 
+3. Setting
+````vue
+// router/index.js
+{
+  path: '/sample',
+  component: () => import('@/views/Sample/index'),
+  meta: { auth: true } // < meta 추가
+},
+
+router.beforeEach((to, from, next) => {
+  if(to.meta.auth){
+    next('/login');
+  }
+  next();
+});
+````
 
 
 ## vuex ##
