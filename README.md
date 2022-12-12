@@ -295,3 +295,22 @@ async loginUser1() {
     - "dev": "vue-cli-service serve --mode development",
 4. 추가된 script로 실행
     - npm run dev 
+
+
+## 단축키 ##
+ - 확장자가 vue인 파일에서 vue 입력하고 탭 누르면 기본템플릿이 생성된다.
+ ````js
+<template>
+  
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style>
+
+</style>
+ ````
